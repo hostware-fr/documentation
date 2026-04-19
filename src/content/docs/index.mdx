@@ -1,0 +1,76 @@
+---
+title: documentation HostWare
+description: Guides, tutoriels et ressources pour vos serveurs de jeux, VPS et hébergement web.
+
+template: splash # Remove or comment out this line to display the site sidebar on this page.
+hero:
+  tagline: Guides, tutoriels et ressources pour vos serveurs de jeux, VPS et hébergement web.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Parcourires la documentation
+      link: /guides/example/
+      icon: right-arrow
+    - text: Espace client
+      link: https://manager.hostware.fr
+      icon: external
+      variant: minimal
+---
+
+import {
+  Card,
+  CardGrid,
+  Icon,
+  LinkButton,
+} from "@astrojs/starlight/components";
+
+## Ressources
+
+<CardGrid stagger>
+  <Card title="Serveurs de jeux" icon="puzzle">
+    Configurez votre serveur de jeu : Minecraft, Fivem et 40+
+    <LinkButton href="./reference/example" icon="external" variant="minimal">
+      Configuration serveur de jeux
+    </LinkButton>
+  </Card>
+  <Card title="VPS" icon="rocket">
+    Gérez votre VPS : Linux, Windows, ect
+    <LinkButton href="./reference/example" icon="external" variant="minimal">
+      Configuration vps
+    </LinkButton>
+  </Card>
+  <Card title="Hébergement web" icon="chrome">
+    Hébergez vos sites WordPress, Node.js ou statiques.
+    <LinkButton href="./web/" icon="right-arrow" variant="minimal">
+      Configuration web
+    </LinkButton>
+  </Card>
+  <Card title="CMS" icon="seti:notebook">
+    Configurez vos CMS, ClientXCMS, HestiaCP et WHCMS
+    <LinkButton href="./reseau/" icon="right-arrow" variant="minimal">
+      Configuration réseau
+    </LinkButton>
+  </Card>
+  <Card title="Réseau & DNS" icon="cloudflare">
+    Configurez vos domaines, Cloudflare et certificats SSL.
+    <LinkButton href="./reseau/" icon="right-arrow" variant="minimal">
+      Configuration réseau
+    </LinkButton>
+  </Card>
+  <Card title="Facturation" icon="open-book">
+    Gérez vos abonnements, paiements et renouvellements.
+    <LinkButton href="./facturation/" icon="right-arrow" variant="minimal">
+      Voir la facturation
+    </LinkButton>
+  </Card>
+  <Card title="Support" icon="email">
+    Une question ? Ouvre un ticket ou rejoins le Discord.
+    <LinkButton
+      href="https://discord.gg/tP7M7DAavW"
+      icon="external"
+      variant="minimal"
+    >
+      Discord HOSTWARE
+    </LinkButton>
+  </Card>
+</CardGrid>
