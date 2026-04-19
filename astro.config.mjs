@@ -16,15 +16,32 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
-          ],
+          label: "🚀 Démarrage rapide",
+          autogenerate: { directory: "guides" },
         },
         {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
+          label: "📋 Information sur Hostware",
+          autogenerate: { directory: "information" },
+        },
+        {
+          label: "🎮 Hébergement de serveurs de jeu",
+          autogenerate: { directory: "jeux" },
+        },
+        {
+          label: "🖥️ VPS",
+          autogenerate: { directory: "vps" },
+        },
+        {
+          label: "🌐 Hébergement web",
+          autogenerate: { directory: "web" },
+        },
+        {
+          label: "💳 Facturation & compte",
+          autogenerate: { directory: "facturation" },
+        },
+        {
+          label: "🛡️ Politique & légal",
+          autogenerate: { directory: "legal" },
         },
       ],
     }),
